@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certidões PPRJ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #334155;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        .certidao-block {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease-in-out;
+        }
+        .certidao-block:hover {
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-3px);
+        }
+        .certidao-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        .certidao-description {
+            font-size: 1rem;
+            color: #475569;
+            margin-bottom: 1.25rem;
+        }
+        .action-button {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+        }
+        .action-button:hover {
+            background-color: #2563eb;
+            box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+        .info-block {
+            background-color: #fffbe6; /* Light yellow for info */
+            border: 1px solid #fcd34d; /* Yellow border */
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 0rem; /* Adjusted margin-top for placement */
+            margin-bottom: 1.5rem;
+        }
+        .info-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #92400e; /* Darker yellow/orange for title */
+            margin-bottom: 0.75rem;
+        }
+        .info-description {
+            font-size: 0.95rem;
+            color: #78350f; /* Brownish color for text */
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="container">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">Certidões PPRJ</h1>
+
+        <!-- Bloco de Informação Adicional - Movido para o topo -->
+        <div class="info-block">
+            <h2 class="info-title">Atenção para Múltiplos Domicílios!</h2>
+            <p class="info-description">
+                Se você residiu em mais de um município nos últimos 5 anos, é importante emitir as certidões nas circunscrições (municípios ou regiões) respectivas onde você teve domicílio. Isso garante que todas as informações pertinentes sejam abrangidas.
+            </p>
+        </div>
+
+        <!-- Certidão a) -->
+        <div class="certidao-block">
+            <h2 class="certidao-title">a) Certidão do 2º Ofício de Registro de Distribuição - Ações Cíveis e Criminais</h2>
+            <p class="certidao-description">
+                Esta certidão abrange três tipos: Processual Criminal, Processual Civil e Processual Fiscal. Todas as 3 certidões podem ser solicitadas neste site.
+            </p>
+            <a href="https://www3.tjrj.jus.br/CJE/certidao/judicial/solicitarCapital?comarca=Capital" target="_blank" class="action-button">
+                Solicitar Certidão (TJRJ)
+            </a>
+        </div>
+
+        <!-- Certidão b) -->
+        <div class="certidao-block">
+            <h2 class="certidao-title">b) Certidão da Justiça Militar da União - Distribuição de Ações Criminais</h2>
+            <p class="certidao-description">
+                Certidão de distribuição de ações criminais da Justiça Militar da União.
+            </p>
+            <a href="https://www.stm.jus.br/servicos-stm/certidao-negativa/emitir-certidao-negativa" target="_blank" class="action-button">
+                Emitir Certidão (STM)
+            </a>
+        </div>
+
+        <!-- Certidão c) -->
+        <div class="certidao-block">
+            <h2 class="certidao-title">c) Certidão do 1º Ofício de Interdições e Tutelas</h2>
+            <p class="certidao-description">
+                Pedido de certidão negativa de interdições e tutelas do 1º Ofício. Custo: R$ 205,12.
+            </p>
+            <a href="https://1rcpn.com/certidao-negativa-interdicoes-e-tutelas/" target="_blank" class="action-button">
+                Pedir Certidão (1º RCPN)
+            </a>
+        </div>
+
+        <!-- Certidão d) -->
+        <div class="certidao-block">
+            <h2 class="certidao-title">d) Certidão do 2º Ofício de Interdições e Tutelas</h2>
+            <p class="certidao-description">
+                Pedido de certidão de pessoa física eletrônica do 2º Ofício de Interdições e Tutelas. Custo: R$ 205,12.
+            </p>
+            <a href="https://www.2oficiointerdicoesetutelas.com.br/pedido/certidao-pf-elet.htm" target="_blank" class="action-button">
+                Pedir Certidão (2º Ofício)
+            </a>
+        </div>
+
+        <!-- Certidão e) -->
+        <div class="certidao-block">
+            <h2 class="certidao-title">e) Certidão do TRE de seu Domicílio Eleitoral - Quitação e Crimes Eleitorais</h2>
+            <p class="certidao-description">
+                Certidão de quitação eleitoral e de crimes eleitorais do Tribunal Regional Eleitoral (TRE) de seu domicílio. Pode ser obtida no aplicativo e-eleitoral ou no link abaixo.
+            </p>
+            <a href="https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/certidoes-eleitor?id=1751028775363" target="_blank" class="action-button">
+                Obter Certidão (TSE)
+            </a>
+        </div>
+
+        <!-- Certidão f) -->
+        <div class="certidao-block">
+            <h2 class="certidao-title">f) Certidão do Tribunal Regional do Trabalho - 1ª Região - Ações Trabalhistas</h2>
+            <p class="certidao-description">
+                Certidão de ações trabalhistas do Tribunal Regional do Trabalho da 1ª Região.
+            </p>
+            <a href="https://ceat.trt1.jus.br/certidao/feitosTrabalhistas/aba1.emissao.htm" target="_blank" class="action-button">
+                Emitir Certidão (TRT1)
+            </a>
+        </div>
+
+        <!-- Certidão g) -->
+        <div class="certidao-block">
+            <h2 class="certidao-title">g) Certidão da Justiça Federal - Ações Cíveis e Criminais</h2>
+            <p class="certidao-description">
+                Certidões de ações cíveis e criminais da Justiça Federal. Ambas podem ser solicitadas no mesmo site.
+            </p>
+            <a href="https://certidoes.trf2.jus.br/certidoes/#/principal/solicitar" target="_blank" class="action-button">
+                Solicitar Certidões (TRF2)
+            </a>
+        </div>
+
+        <!-- Certidão h) -->
+        <div class="certidao-block">
+            <h2 class="certidao-title">h) Certidão de Nada Consta Criminal da Polícia Federal</h2>
+            <p class="certidao-description">
+                Certidão de antecedentes criminais emitida pela Polícia Federal.
+            </p>
+            <a href="https://servicos.pf.gov.br/epol-sinic-publico/" target="_blank" class="action-button">
+                Acessar Serviço (PF)
+            </a>
+        </div>
+
+        <!-- Certidão i) -->
+        <div class="certidao-block">
+            <h2 class="certidao-title">i) Certidão de Inteiro Teor - IIFP/Sepol (Antecedentes Criminais Estadual)</h2>
+            <p class="certidao-description">
+                Certidão de antecedentes criminais estadual, emitida pelo IIFP/Sepol.
+            </p>
+            <a href="https://certidaocacciifppcerj.detran.rj.gov.br/CertidaoV3.aspx?lingua=Portugu%c3%aas" target="_blank" class="action-button">
+                Emitir Certidão (DETRAN RJ)
+            </a>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Certidões PPRJ. Todos os direitos reservados a Gabriel Angelino.</p>
+    </footer>
+</body>
+</html>
